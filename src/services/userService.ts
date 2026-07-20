@@ -1,3 +1,3 @@
-export function test(res: any) {
-  res.json({ ok: true }); // ❌ deveria quebrar regra
+export function createUser(res: any) {
+  res.json({ ok: true }); // ❌ isso deve quebrar regra
 }
