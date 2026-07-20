@@ -1,16 +1,14 @@
 rules:
-  - id: no-http-in-service
-    message: "Service nao deve usar HTTP response"
+  - id: CS-ARCH-no-http-in-service
+    message: "Service cannot use HTTP response helpers"
     severity: ERROR
     languages: [typescript]
 
-    patterns:
-      - pattern-either:
-          - pattern: $X.json(...)
-          - pattern: $X.send(...)
-      - pattern-not: axios.$METHOD(...)
-      - pattern-not: fetch(...)
+    pattern-either:
+      - pattern: $RES.json(...)
+      - pattern: $RES.send(...)
+      - pattern: $RES.status(...).json(...)
 
     paths:
       include:
-        - "**/services/**"
+        - "src/services/**"
