@@ -1,0 +1,11 @@
+rules:
+  - id: CS-ARCH-no-db-in-controller
+    message: "Controller não pode acessar DB direto"
+    severity: ERROR
+    languages: [typescript]
+
+    pattern: prisma.$METHOD(...)
+
+    paths:
+      include:
+        - "**/controllers/**"
