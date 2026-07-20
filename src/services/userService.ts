@@ -1,3 +1,6 @@
-export function createUser(res: any) {
-  res.json({ ok: true }); // ❌ isso deve quebrar regra
+// src/controllers/test.ts
+export function test() {
+  if (true) {
+    console.log("erro"); // ❌ certeza que pega
+  }
 }
