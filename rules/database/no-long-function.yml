@@ -1,13 +1,19 @@
 rules:
-  - id: CS-017-function-size
-    message: "Função muito grande"
-    severity: WARNING
+  - id: CS-003-controller-logic
+    message: " Controller não deve conter lógica de negócio"
+    severity: ERROR
     languages: [typescript]
 
-    pattern: |
-      function $FUNC(...) {
-        ...
-        ...
-        ...
-        ...
-      }
+    patterns:
+      - pattern: |
+          if ($COND) {
+            ...
+          }
+      - pattern-not: |
+          if (!$REQ.body) {
+            ...
+          }
+
+    paths:
+      include:
+        - "**/controllers/**"

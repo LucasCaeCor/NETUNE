@@ -1,0 +1,11 @@
+rules:
+  - id: CS-ARCH-no-http-in-service
+    message: "Service não pode usar HTTP"
+    severity: ERROR
+    languages: [typescript]
+
+    pattern: res.$METHOD(...)
+
+    paths:
+      include:
+        - "**/services/**"
