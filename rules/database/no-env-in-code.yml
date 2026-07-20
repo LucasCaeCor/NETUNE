@@ -1,0 +1,8 @@
+rules:
+  - id: SEC-016-no-secret
+    message: "Não use segredo direto no código"
+    severity: ERROR
+    languages: [typescript]
+
+    pattern: |
+      "SECRET"

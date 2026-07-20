@@ -1,0 +1,8 @@
+rules:
+  - id: CS-025-async
+    message: " Promise sem await"
+    severity: WARNING
+    languages: [typescript]
+
+    pattern: |
+      fetch(...)

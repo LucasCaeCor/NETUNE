@@ -1,0 +1,8 @@
+rules:
+  - id: CS-101-no-global-state
+    message: " Evite estado global"
+    severity: ERROR
+    languages: [typescript]
+
+    pattern: |
+      let $VAR = ...

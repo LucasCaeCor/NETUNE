@@ -1,0 +1,8 @@
+rules:
+  - id: API-012-status-code
+    message: "AVISO: Verifique uso correto de status HTTP"
+    severity: WARNING
+    languages: [typescript]
+
+    pattern: |
+      res.status(500)

@@ -1,0 +1,8 @@
+rules:
+  - id: CS-020-no-magic-number
+    message: " Evite números mágicos"
+    severity: WARNING
+    languages: [typescript]
+
+    pattern: |
+      = 123

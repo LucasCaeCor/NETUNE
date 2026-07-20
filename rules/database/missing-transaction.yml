@@ -1,0 +1,8 @@
+rules:
+  - id: DB-023-transaction
+    message: " Operação crítica sem transação"
+    severity: WARNING
+    languages: [typescript]
+
+    pattern: |
+      update(...)

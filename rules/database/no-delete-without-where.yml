@@ -1,0 +1,8 @@
+rules:
+  - id: DB-016-soft-delete
+    message: " Delete sem WHERE é perigoso"
+    severity: ERROR
+    languages: [typescript]
+
+    pattern: |
+      deleteMany()

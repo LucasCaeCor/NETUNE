@@ -1,0 +1,8 @@
+rules:
+  - id: API-025-sensitive-data
+    message: "ERRO: Nao retornar dados sensiveis"
+    severity: ERROR
+    languages: [typescript]
+
+    pattern: |
+      password:

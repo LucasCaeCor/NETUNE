@@ -1,0 +1,10 @@
+rules:
+  - id: CS-071-error-handling
+    message: " Todo try precisa de catch"
+    severity: ERROR
+    languages: [typescript]
+
+    pattern: |
+      try {
+        ...
+      }

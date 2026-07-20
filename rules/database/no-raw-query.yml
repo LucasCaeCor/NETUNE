@@ -1,0 +1,8 @@
+rules:
+  - id: DB-020-raw-query
+    message: " Evite query raw"
+    severity: WARNING
+    languages: [typescript]
+
+    pattern: |
+      queryRaw

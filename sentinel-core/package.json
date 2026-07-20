@@ -1,0 +1,23 @@
+{
+  "name": "sentinel-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.65.0",
+    "@typescript-eslint/parser": "^8.65.0",
+    "eslint": "^10.7.0",
+    "globals": "^17.7.0",
+    "semgrep": "^0.0.1",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^8.65.0"
+  }
+}

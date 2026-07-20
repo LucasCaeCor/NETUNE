@@ -1,0 +1,8 @@
+rules:
+  - id: API-015-pagination
+    message: " Pode faltar paginação"
+    severity: WARNING
+    languages: [typescript]
+
+    pattern: |
+      findMany()

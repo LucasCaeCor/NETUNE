@@ -1,0 +1,8 @@
+rules:
+  - id: API-027-auth-required
+    message: " Endpoint sem autenticação"
+    severity: ERROR
+    languages: [typescript]
+
+    pattern: |
+      app.get($ROUTE, $HANDLER)

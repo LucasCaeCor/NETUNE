@@ -1,0 +1,15 @@
+rules:
+  - id: CS-003-no-business-logic-in-controller
+    languages: [typescript]
+    message: " CS-003: Business logic não pode ficar no controller"
+    severity: ERROR
+
+    patterns:
+      - pattern: |
+          if ($COND) {
+            ...
+          }
+
+    paths:
+      include:
+        - "src/controllers/**"

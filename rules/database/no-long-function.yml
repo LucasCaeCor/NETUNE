@@ -1,0 +1,13 @@
+rules:
+  - id: CS-017-function-size
+    message: "Função muito grande"
+    severity: WARNING
+    languages: [typescript]
+
+    pattern: |
+      function $FUNC(...) {
+        ...
+        ...
+        ...
+        ...
+      }

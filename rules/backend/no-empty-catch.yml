@@ -1,0 +1,9 @@
+rules:
+  - id: CS-024-no-silent-failure
+    message: " Catch vazio não permitido"
+    severity: ERROR
+    languages: [typescript]
+
+    pattern: |
+      catch ($ERR) {
+      }

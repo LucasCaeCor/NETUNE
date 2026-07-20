@@ -1,0 +1,8 @@
+rules:
+  - id: DEV-016-config
+    message: "URL hardcoded"
+    severity: WARNING
+    languages: [typescript]
+
+    pattern: |
+      "http://"

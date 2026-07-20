@@ -1,0 +1,6 @@
+rules:
+  - id: CS-082-no-console
+    pattern: console.log(...)
+    message: " Evite console.log"
+    severity: WARNING
+    languages: [typescript]
