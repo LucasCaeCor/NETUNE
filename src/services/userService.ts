@@ -1,3 +1,3 @@
-export function service() {
-  return { ok: true, status: "ok" };
+export function service(res: any) {
+  res.json({ ok: true }); // ❌ erro
 }
