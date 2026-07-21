@@ -1,14 +1,26 @@
-## ⚡ Instalação em 30 segundos
-
-```bash
-curl -sL https://raw.githubusercontent.com/LucasCaeCor/NETUNE/main/install.sh | bash
-
-
 # 🚀 NETUNE — The Engineering Intelligence Platform
 
 > **Pare de aceitar código ruim no seu projeto.**
 >
 > NETUNE bloqueia automaticamente violações de arquitetura antes do código entrar em produção.
+
+---
+
+## ⚡ Instalação em Segundos
+
+**Via CLI (Oficial):**
+
+```bash
+npx github:LucasCaeCor/NETUNE init
+```
+
+*(Ou `npx netune init` após publicação no registro npm)*
+
+**Via Script Bash:**
+
+```bash
+curl -sL https://raw.githubusercontent.com/LucasCaeCor/NETUNE/main/install.sh | bash
+```
 
 ---
 
@@ -77,28 +89,42 @@ Com NETUNE:
 
 ## 🚀 Instalação Rápida
 
-### 1. Clone o repositório
+### Opção 1: Via CLI (Recomendado)
+
+Rode no diretório raiz do seu projeto Node/TypeScript:
 
 ```bash
-git clone https://github.com/LucasCaeCor/NETUNE.git
+npx github:LucasCaeCor/NETUNE init
+```
+
+*Nota: Se o pacote `netune` for publicado no registro npm, você também poderá utilizar `npx netune init`.*
+
+---
+
+### Opção 2: Via Script Bash
+
+```bash
+curl -sL https://raw.githubusercontent.com/LucasCaeCor/NETUNE/main/install.sh | bash
 ```
 
 ---
 
-### 2. Adicione ao seu projeto
+### Opção 3: Manualmente
 
-Copie:
-
-```bash
-rules/
-.github/workflows/semgrep.yml
-```
+1. Copie a pasta `rules/` para a raiz do seu projeto.
+2. Copie o arquivo `.github/workflows/semgrep.yml` para `.github/workflows/semgrep.yml`.
 
 ---
 
-### 3. Pronto
+### 🛡️ Comportamento de Segurança e Atualização
 
-Agora todo Pull Request será validado automaticamente.
+Ao executar o instalador (`init`), o NETUNE copia os diretórios `rules/` e `.github/workflows/semgrep.yml`. Caso o projeto alvo já possua essas pastas/arquivos, o instalador atualizará o conteúdo e emitirá uma mensagem informando que os arquivos existentes foram atualizados.
+
+---
+
+### Pronto!
+
+Agora todo Pull Request no seu repositório será analisado automaticamente via GitHub Actions.
 
 ---
 

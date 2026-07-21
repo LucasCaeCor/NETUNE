@@ -1,8 +1,16 @@
 {
-  "name": "netune-landing",
-  "private": true,
+  "name": "netune",
   "version": "1.0.0",
   "type": "module",
+  "bin": {
+    "netune": "./bin/netune.js"
+  },
+  "files": [
+    "bin",
+    "rules",
+    ".github/workflows/semgrep.yml",
+    "README.md"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
