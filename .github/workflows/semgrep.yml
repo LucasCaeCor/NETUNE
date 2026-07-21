@@ -21,4 +21,4 @@ jobs:
         run: pip install semgrep
 
       - name: Rodar Semgrep
-        run: semgrep --config=rules/ .
+        run: semgrep --error --config=rules/ .
