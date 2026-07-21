@@ -4,7 +4,7 @@
 curl -sL https://raw.githubusercontent.com/LucasCaeCor/NETUNE/main/install.sh | bash
 
 
-# 🚀 NETUNE — Guardião de Arquitetura de Software
+# 🚀 NETUNE — The Engineering Intelligence Platform
 
 > **Pare de aceitar código ruim no seu projeto.**
 >
