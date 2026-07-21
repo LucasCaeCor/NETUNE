@@ -1,10 +1,18 @@
 rules:
-  - id: CS-ARCH-no-db-in-controller
-    message: "Controller não pode acessar DB direto"
+  - id: no-db-in-controller
+    message: "Controller não deve acessar banco diretamente"
     severity: ERROR
     languages: [typescript]
 
-    pattern: prisma.$METHOD(...)
+    patterns:
+      - pattern-either:
+          - pattern: $DB.query(...)
+          - pattern: $DB.find(...)
+          - pattern: $DB.insert(...)
+          - pattern: $DB.update(...)
+          - pattern: $DB.delete(...)
+          - pattern: prisma.$METHOD(...)
+          - pattern: connection.$METHOD(...)
 
     paths:
       include:

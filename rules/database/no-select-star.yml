@@ -1,8 +1,7 @@
 rules:
-  - id: DB-019-no-select-star
-    message: "ERRO: Nao use SELECT *"
-    severity: ERROR
+  - id: no-select-star
+    message: "Evite SELECT *"
+    severity: WARNING
     languages: [typescript]
 
-    pattern: |
-      "SELECT * FROM"
+    pattern-regex: SELECT\s+\*
