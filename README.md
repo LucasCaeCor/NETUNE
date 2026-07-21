@@ -1,3 +1,9 @@
+## ⚡ Instalação em 30 segundos
+
+```bash
+curl -sL https://raw.githubusercontent.com/LucasCaeCor/NETUNE/main/install.sh | bash
+
+
 # 🚀 NETUNE — Guardião de Arquitetura de Software
 
 > **Pare de aceitar código ruim no seu projeto.**
