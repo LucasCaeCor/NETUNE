@@ -1,6 +1,6 @@
 rules:
   - id: CS-082-no-console
-    message: "Avoid console.log"
+    message: "Avoid console logging"
     severity: ERROR
     languages: [typescript]
     pattern-either:
@@ -8,3 +8,6 @@ rules:
       - pattern: console.error(...)
       - pattern: console.warn(...)
       - pattern: console.info(...)
+    paths:
+      include:
+        - "src/**/*.ts"

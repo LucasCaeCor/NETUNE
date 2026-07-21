@@ -1,19 +1,16 @@
 rules:
   - id: no-db-in-controller
-    message: "Controller não deve acessar banco diretamente"
+    message: "Controller cannot access the database"
     severity: ERROR
     languages: [typescript]
-
-    patterns:
-      - pattern-either:
-          - pattern: $DB.query(...)
-          - pattern: $DB.find(...)
-          - pattern: $DB.insert(...)
-          - pattern: $DB.update(...)
-          - pattern: $DB.delete(...)
-          - pattern: prisma.$METHOD(...)
-          - pattern: connection.$METHOD(...)
-
+    pattern-either:
+      - pattern: $DB.query(...)
+      - pattern: $DB.find(...)
+      - pattern: $DB.insert(...)
+      - pattern: $DB.update(...)
+      - pattern: $DB.delete(...)
+      - pattern: prisma.$METHOD(...)
+      - pattern: connection.$METHOD(...)
     paths:
       include:
-        - "**/controllers/**"
+        - "src/controllers/**/*.ts"

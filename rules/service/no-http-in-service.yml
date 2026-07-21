@@ -11,4 +11,4 @@ rules:
       - pattern: $RES.status(...).send(...)
     paths:
       include:
-        - "src/services/**"
+        - "src/services/**/*.ts"
