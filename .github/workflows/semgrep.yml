@@ -25,4 +25,6 @@ jobs:
         run: pip install semgrep
 
       - name: Rodar Semgrep
-        run: semgrep --error --config=rules/ .
+        run: |
+          echo "Running Semgrep against repository"
+          semgrep --error --config=rules/ .

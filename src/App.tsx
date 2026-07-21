@@ -12,24 +12,20 @@ const pillars = [
 
 const examples = [
   {
-    title: 'Controller acessando banco',
-    code: `export async function listUsers(req, res) {
-  const users = await db.query('SELECT * FROM users');
-  return res.json(users);
+    title: 'Arquitetura enxuta',
+    code: `export function listUsers() {
+  return { ok: true, count: 3 };
 }`,
   },
   {
-    title: 'Service usando HTTP',
-    code: `export async function getProfile(service) {
-  export function getUser(res) {
-  res.json({ ok: true }); //  erro real
-}
+    title: 'Regras claras',
+    code: `export function getProfile() {
+  return { status: 'ok' };
 }`,
   },
   {
-    title: 'console.log em produção',
+    title: 'Review automático',
     code: `export function saveUser(user) {
-  console.log('salvando', user);
   return user;
 }`,
   },
