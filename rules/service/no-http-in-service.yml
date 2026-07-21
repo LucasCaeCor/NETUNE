@@ -1,11 +1,14 @@
 rules:
   - id: CS-ARCH-no-http-in-service
-    message: "Service não pode usar HTTP"
+    message: "Service cannot use response helpers"
     severity: ERROR
     languages: [typescript]
-
-    pattern: res.$METHOD(...)
-
+    pattern-either:
+      - pattern: $RES.json(...)
+      - pattern: $RES.send(...)
+      - pattern: $RES.status(...)
+      - pattern: $RES.status(...).json(...)
+      - pattern: $RES.status(...).send(...)
     paths:
       include:
-        - "**/services/**"
+        - "src/services/**"
