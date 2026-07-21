@@ -17,27 +17,27 @@ if (command === '--version' || command === '-v') {
   const pkgPath = path.join(packageDir, 'package.json');
   if (fs.existsSync(pkgPath)) {
     const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8'));
-    console.log(`NETUNE v${pkg.version}`);
+    console.log(`ARC v${pkg.version}`);
   } else {
-    console.log('NETUNE v1.0.0');
+    console.log('ARC v1.0.0');
   }
   process.exit(0);
 }
 
 if (command === '--help' || command === '-h') {
   console.log(`
-🌊 NETUNE CLI — Architectural Guard
+🌊 ARC CLI — Architectural Guard
 
 Uso:
-  npx netune init      Instala as regras do NETUNE e o workflow no projeto atual
-  npx netune --version Exibe a versão instalada
-  npx netune --help    Exibe esta mensagem de ajuda
+  npx arc init      Instala as regras do ARC e o workflow no projeto atual
+  npx arc --version Exibe a versão instalada
+  npx arc --help    Exibe esta mensagem de ajuda
   `);
   process.exit(0);
 }
 
 function runInit() {
-  console.log('\n🌊 Instalando NETUNE no seu projeto...\n');
+  console.log('\n🌊 Instalando ARC no seu projeto...\n');
 
   const sourceRules = path.join(packageDir, 'rules');
   const destRules = path.join(targetDir, 'rules');
@@ -74,10 +74,10 @@ function runInit() {
       console.warn('  ⚠️  Arquivo semgrep.yml não encontrado no pacote.');
     }
 
-    console.log('\n🚀 NETUNE instalado com sucesso!');
+    console.log('\n🚀 ARC instalado com sucesso!');
     console.log('💡 Qualquer Pull Request agora será analisado automaticamente pelo Semgrep.\n');
   } catch (error) {
-    console.error('\n❌ Erro durante a instalação do NETUNE:', error.message);
+    console.error('\n❌ Erro durante a instalação do ARC:', error.message);
     process.exit(1);
   }
 }
@@ -85,6 +85,6 @@ function runInit() {
 if (!command || command === 'init') {
   runInit();
 } else {
-  console.log(`Comando desconhecido: "${command}". Use "npx netune --help" para ver as opções.`);
+  console.log(`Comando desconhecido: "${command}". Use "npx arc --help" para ver as opções.`);
   process.exit(1);
 }

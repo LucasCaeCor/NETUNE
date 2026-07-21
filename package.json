@@ -1,9 +1,9 @@
 {
-  "name": "netune",
+  "name": "arc",
   "version": "1.0.0",
   "type": "module",
   "bin": {
-    "netune": "./bin/netune.js"
+    "arc": "./bin/arc.js"
   },
   "files": [
     "bin",

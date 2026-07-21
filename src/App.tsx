@@ -37,7 +37,7 @@ const examples = [
 
 const steps = [
   'Conecte o GitHub e defina as regras do seu time',
-  'O NETUNE analisa cada pull request em tempo real',
+  'O ARC analisa cada pull request em tempo real',
   'Violação de arquitetura vira bloqueio automático antes do merge',
 ];
 
@@ -45,9 +45,9 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#030712] text-slate-100">
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-8 lg:px-8">
-        <div className="text-base font-semibold tracking-[0.24em] text-cyan-300">NETUNE</div>
+        <div className="text-base font-semibold tracking-[0.24em] text-cyan-300">ARC</div>
         <a
-          href="https://github.com/LucasCaeCor/NETUNE"
+          href="https://github.com/LucasCaeCor/ARC"
           className="text-sm font-medium text-slate-300 transition hover:text-white"
         >
           Ver no GitHub
@@ -64,11 +64,11 @@ export default function App() {
               Seu código não entra se quebrar a arquitetura.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300 sm:text-xl">
-              O NETUNE analisa cada pull request automaticamente e impede que código fora do padrão comprometa a estrutura do seu sistema.
+              O ARC analisa cada pull request automaticamente e impede que código fora do padrão comprometa a estrutura do seu sistema.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <a
-                href="https://github.com/LucasCaeCor/NETUNE"
+                href="https://github.com/LucasCaeCor/ARC"
                 className="rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
               >
                 Começar agora
@@ -135,7 +135,7 @@ export default function App() {
               Defenda sua arquitetura sem depender de revisão manual.
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-300">
-              Em vez de confiar na memória do time, o NETUNE valida cada PR com regras claras e bloqueia violações antes do merge.
+              Em vez de confiar na memória do time, o ARC valida cada PR com regras claras e bloqueia violações antes do merge.
             </p>
           </div>
           <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -197,10 +197,10 @@ export default function App() {
             Instale, conecte e comece a bloquear violações antes que elas se transformem em retrabalho caro.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a href="https://github.com/LucasCaeCor/NETUNE" className="rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300">
+            <a href="https://github.com/LucasCaeCor/ARC" className="rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300">
               Começar agora
             </a>
-            <a href="https://github.com/LucasCaeCor/NETUNE" className="rounded-full border border-white/10 px-6 py-3 font-semibold text-slate-200 transition hover:border-white/30 hover:text-white">
+            <a href="https://github.com/LucasCaeCor/ARC" className="rounded-full border border-white/10 px-6 py-3 font-semibold text-slate-200 transition hover:border-white/30 hover:text-white">
               Ver no GitHub
             </a>
           </div>

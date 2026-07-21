@@ -1,8 +1,8 @@
-# 🚀 NETUNE — The Engineering Intelligence Platform
+# 🚀 ARC — The Engineering Intelligence Platform
 
 > **Pare de aceitar código ruim no seu projeto.**
 >
-> NETUNE bloqueia automaticamente violações de arquitetura antes do código entrar em produção.
+> ARC bloqueia automaticamente violações de arquitetura antes do código entrar em produção.
 
 ---
 
@@ -11,12 +11,12 @@
 Rode no diretório raiz do seu projeto:
 
 ```bash
-npx github:LucasCaeCor/NETUNE init
+npx github:LucasCaeCor/ARC init
 ```
 
 > **Alternativa via Script Bash (Linux / macOS / Git Bash):**
 > ```bash
-> curl -sL https://raw.githubusercontent.com/LucasCaeCor/NETUNE/main/install.sh | bash
+> curl -sL https://raw.githubusercontent.com/LucasCaeCor/ARC/main/install.sh | bash
 > ```
 
 ---
@@ -36,7 +36,7 @@ Em praticamente todo projeto:
 
 ## 💡 A Solução
 
-O **NETUNE** atua como um guardião automático:
+O **ARC** atua como um guardião automático:
 
 ✔ Analisa seu código em Pull Requests
 ✔ Detecta violações de arquitetura
@@ -75,7 +75,7 @@ console.log("debug");
 
 ## ✅ Resultado
 
-Com NETUNE:
+Com ARC:
 
 * Arquitetura respeitada automaticamente
 * Código mais limpo
@@ -91,7 +91,7 @@ Com NETUNE:
 Funciona nativamente em **Windows (PowerShell/CMD), macOS e Linux**:
 
 ```bash
-npx github:LucasCaeCor/NETUNE init
+npx github:LucasCaeCor/ARC init
 ```
 
 ---
@@ -99,7 +99,7 @@ npx github:LucasCaeCor/NETUNE init
 ### Opção 2: Via Script Bash (Fallback para ambientes Linux/CI)
 
 ```bash
-curl -sL https://raw.githubusercontent.com/LucasCaeCor/NETUNE/main/install.sh | bash
+curl -sL https://raw.githubusercontent.com/LucasCaeCor/ARC/main/install.sh | bash
 ```
 
 ---
@@ -113,7 +113,7 @@ curl -sL https://raw.githubusercontent.com/LucasCaeCor/NETUNE/main/install.sh | 
 
 ### 🛡️ Comportamento de Segurança e Atualização
 
-Ao executar o instalador (`init`), o NETUNE copia os diretórios `rules/` e `.github/workflows/semgrep.yml`. Caso o projeto alvo já possua essas pastas/arquivos, o instalador atualizará o conteúdo e emitirá uma mensagem informando que os arquivos existentes foram atualizados.
+Ao executar o instalador (`init`), o ARC copia os diretórios `rules/` e `.github/workflows/semgrep.yml`. Caso o projeto alvo já possua essas pastas/arquivos, o instalador atualizará o conteúdo e emitirá uma mensagem informando que os arquivos existentes foram atualizados.
 
 ---
 
@@ -125,7 +125,7 @@ Agora todo Pull Request no seu repositório será analisado automaticamente via 
 
 ## 🔍 Como Funciona
 
-NETUNE usa:
+ARC usa:
 
 * **Semgrep** → análise estática de código
 * **Regras customizadas** → sua arquitetura definida
@@ -160,7 +160,7 @@ NETUNE usa:
 
 ## 💰 Visão de Produto
 
-NETUNE evolui para:
+ARC evolui para:
 
 👉 Plataforma de governança de código
 👉 Padrões prontos para empresas

@@ -1,13 +1,13 @@
 #!/bin/bash
 
-echo "Instalando NETUNE..."
+echo "Instalando ARC..."
 
-git clone https://github.com/LucasCaeCor/NETUNE tmp-netune
+git clone https://github.com/LucasCaeCor/ARC tmp-arc
 
-cp -r tmp-netune/rules .
+cp -r tmp-arc/rules .
 mkdir -p .github/workflows
-cp tmp-netune/.github/workflows/semgrep.yml .github/workflows/
+cp tmp-arc/.github/workflows/semgrep.yml .github/workflows/
 
-rm -rf tmp-netune
+rm -rf tmp-arc
 
-echo "NETUNE instalado com sucesso!"
+echo "ARC instalado com sucesso!"
