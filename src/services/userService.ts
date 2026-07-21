@@ -1,3 +1,3 @@
 export function service() {
-  return { ok: true };
+  return { ok: true, status: "ok" };
 }
