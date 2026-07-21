@@ -1,6 +1,9 @@
 rules:
   - id: CS-ARCH-no-http-in-service
-    message: "Service cannot use response helpers"
+    message: |
+      Service não pode usar helpers de resposta HTTP.
+      Motivo: a camada de service deve cuidar da regra de negócio, não da resposta web.
+      Como corrigir: retorne os dados no service e use res.json/res.send no controller.
     severity: ERROR
     languages: [typescript]
     pattern-either:

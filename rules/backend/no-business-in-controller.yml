@@ -1,6 +1,9 @@
 rules:
   - id: CS-003-no-business-logic-in-controller
-    message: "Lógica de negócio não pode ficar no controller"
+    message: |
+      Lógica de negócio não deve ficar no controller.
+      Motivo: o controller deve apenas receber a requisição e chamar a camada de serviço.
+      Como corrigir: mova validações e regras condicionais de negócio para o Service.
     severity: ERROR
     languages: [typescript]
 

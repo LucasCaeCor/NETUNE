@@ -1,6 +1,9 @@
 rules:
   - id: no-db-in-controller
-    message: "Controller não deve acessar banco diretamente"
+    message: |
+      Controller não pode acessar o banco diretamente.
+      Motivo: o controller deve orquestrar a requisição, não executar acesso a dados.
+      Como corrigir: mova o acesso ao banco para Service ou Repository.
     severity: ERROR
     languages: [typescript]
 

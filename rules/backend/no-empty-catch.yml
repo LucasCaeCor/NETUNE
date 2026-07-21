@@ -1,6 +1,9 @@
 rules:
   - id: CS-024-no-silent-failure
-    message: " Catch vazio não permitido"
+    message: |
+      Bloco catch não pode ficar vazio.
+      Motivo: capturar erros silenciosamente oculta falhas e dificulta a depuração.
+      Como corrigir: trate o erro ou registre-o no logger da aplicação.
     severity: ERROR
     languages: [typescript]
 

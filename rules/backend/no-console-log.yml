@@ -1,6 +1,9 @@
 rules:
   - id: CS-082-no-console
-    message: "Avoid console.log"
+    message: |
+      Evite console.log/error/warn em código de produção.
+      Motivo: logs de console poluem a saída e podem expor informação sensível.
+      Como corrigir: remova o console ou use o logger oficial da aplicação.
     severity: ERROR
     languages: [typescript]
     pattern-either:

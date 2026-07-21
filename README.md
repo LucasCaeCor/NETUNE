@@ -8,19 +8,16 @@
 
 ## ⚡ Instalação em Segundos
 
-**Via CLI (Oficial):**
+Rode no diretório raiz do seu projeto:
 
 ```bash
 npx github:LucasCaeCor/NETUNE init
 ```
 
-*(Ou `npx netune init` após publicação no registro npm)*
-
-**Via Script Bash:**
-
-```bash
-curl -sL https://raw.githubusercontent.com/LucasCaeCor/NETUNE/main/install.sh | bash
-```
+> **Alternativa via Script Bash (Linux / macOS / Git Bash):**
+> ```bash
+> curl -sL https://raw.githubusercontent.com/LucasCaeCor/NETUNE/main/install.sh | bash
+> ```
 
 ---
 
@@ -89,19 +86,17 @@ Com NETUNE:
 
 ## 🚀 Instalação Rápida
 
-### Opção 1: Via CLI (Recomendado)
+### Opção 1: Via CLI (Método Oficial Recomendado)
 
-Rode no diretório raiz do seu projeto Node/TypeScript:
+Funciona nativamente em **Windows (PowerShell/CMD), macOS e Linux**:
 
 ```bash
 npx github:LucasCaeCor/NETUNE init
 ```
 
-*Nota: Se o pacote `netune` for publicado no registro npm, você também poderá utilizar `npx netune init`.*
-
 ---
 
-### Opção 2: Via Script Bash
+### Opção 2: Via Script Bash (Fallback para ambientes Linux/CI)
 
 ```bash
 curl -sL https://raw.githubusercontent.com/LucasCaeCor/NETUNE/main/install.sh | bash

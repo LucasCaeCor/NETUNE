@@ -1,6 +1,9 @@
 rules:
   - id: CS-071-error-handling
-    message: " Todo try precisa de catch"
+    message: |
+      Bloco try deve possuir tratamento de erro (catch).
+      Motivo: executar código sensível a falhas sem bloco catch pode causar crashes inesperados.
+      Como corrigir: adicione um bloco catch para tratar ou registrar a exceção.
     severity: ERROR
     languages: [typescript]
 

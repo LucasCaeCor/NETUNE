@@ -1,6 +1,9 @@
 rules:
   - id: no-select-star
-    message: "Evite SELECT *"
+    message: |
+      Evite utilizar SELECT * em consultas ao banco.
+      Motivo: buscar todas as colunas aumenta o tráfego de dados e reduz a performance.
+      Como corrigir: especifique apenas os campos necessários na consulta.
     severity: WARNING
     languages: [typescript]
 
